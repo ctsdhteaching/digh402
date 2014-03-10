@@ -1,0 +1,103 @@
+body {
+	background-color:#25272f;
+	font-family: helvetica;
+	font-weight: bold;
+	color:white;	
+}
+
+h2 {
+	font-size: 18pt;
+	margin-bottom:15px;
+}
+
+.event-hours {
+	font-size:10pt;
+	font-style:italic;
+	text-align:right;
+	margin-right:10px;
+}
+
+.event-date {
+	margin-top:40px;
+}
+
+.event-day {
+	font-size: 55pt;
+}
+		
+
+.tile  {
+	background-color:blue;
+	width: 170px;
+	height: 140px;
+	padding: 20px;
+	margin: 5px;
+	float: left;
+}
+
+.tile-double {
+	width:390px;
+	height:140px;
+	margin:5px;
+	padding:20px;
+	float: left;
+}
+
+.tile-list a {
+	color:white;
+	text-decoration:none;
+	}
+ul.tile-list li {
+	margin-bottom: 5px;
+	margin-left: 10px;
+	list-style-type: disc;
+	}
+	
+.green {
+	background-color:green;
+}
+
+.red {
+	background-color:red;
+}
+
+.purple {
+	background-color:purple;
+}
+
+.lightgrey {
+	background-color:#f6f6f6;
+	color:black;
+}
+
+.city-image {
+	background-image:url("http://excellentworlds.com/data_images/countries/santiago/santiago-03.jpg");
+	font-size: 20pts;
+}
+
+#main-container {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.chart-total{
+	font-size:30pt;
+	text-align:right;
+}
+
+#users-table{
+	margin:10px auto;
+	font-weight: normal;
+	width: 100%;
+	}
+	
+#users-table th{
+	border-bottom:10px solid blue;
+	padding: 2px;
+	text-align:center;
+}
+
+#users-table td{
+	padding 2px;
+	text-align:center;
+}
