@@ -9,33 +9,26 @@
 class User 
 {
 	//properties for class
-	public $jobtitle;
-	private $age;
+	private $name;
+	
 	
 	//constructor
 	function __construct($jobtitle) {
 		$this->jobtitile = $jobtitle;
 	}
+		
+	
+	function set_name($name) {
+			$this->name = $name;
+	}
+	
+	function get_name($name) {
+		return $this->name;
+	}
 
-	//setter for job title
-	function set_jobtitle($jobtitle) {
-		$this->jobtitle = $jobtitle;
-	}
 	
-	//getter job title
-	function get_jobtitle() {
-		return $this->jobtitle;
-	}
 	
-	//setter for age
-	function set_age($newage) {
-		$this->age = $newage;
-	}
 	
-	//getter for age
-	function get_age() {
-		return $this->age;
-	}
 
 }
 ?>
