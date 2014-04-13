@@ -1,0 +1,44 @@
+.fr-focus {
+  background-color: pink;
+}
+
+.eng-focus {
+  background-color: skyblue;
+}
+
+.eng span:hover {
+  background-color: skyblue;
+}
+
+.fr span:hover {
+  background-color: pink;
+}
+
+.eng {
+  width: 45%; 
+  float: right;
+}
+
+.fr {
+  width: 45%; 
+  float: left;
+}
+
+.alignment {
+  float: left;
+  width: 100%;
+}
+
+/*
+.eng, .fr {
+  border: 1px solid gray;
+}
+
+.alignment {
+  border: 1px solid green;
+}
+*/
+
+#text {
+  display: none;
+}

@@ -1,0 +1,129 @@
+<meta charset="utf-8">
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="text.css" />
+
+<script src="jquery.min.js"></script>
+
+</head>
+<body>
+
+<div id="text">
+The Frog who wanted to be as Large as the Ox
+La Grenouille qui se veut faire aussi grosse que le Boeuf
+
+
+by: Jean de la Fontaine
+de: Jean de la Fontaine
+
+
+A frog saw an ox; in his eyes 
+Une Grenouille vit un Boeuf
+
+A huge and handsome figure.  
+Qui lui sembla de belle taille.
+
+He, who was no bigger than an egg form top to toe,
+Elle, qui n'etoit pas grosse en tout comme un oeuf,
+
+ 
+In envy stretched and strained in an effort to blow 
+Envieuse, s'etend, et s'enfle, et se travaille,
+
+Himself up to the same size. 
+Pour egaler l'animal en grosseur,
+
+'Just watch me closely, Sis.
+Disant : « Regardez bien, ma soeur ;
+
+
+Tell me, am I large enough? 
+Est-ce assez ? Dit-moi ; n'y suis-je point encore ?
+
+Have I got there?' 'No.' More huff and puff. 
+Nenni. -M'y voici donc ? - Point du tout. - M'y voilà ?
+
+'Well, look at me now!' Another 'No.', 'Then what about this?''You've still a long way to go.'
+Vous n'en approchez point. » La chetive pecore
+
+At which the poor frog, overloaded, With wind and vanity, exploded.
+S'enfla si bien qu'elle creva.
+
+The world is full of men as foolish as that. 
+Le Monde est plein de gens qui ne sont pas plus sages :
+
+The tradesman wants to build like an aristocrat. 
+Tout bourgeois veut batir comme les grands seigneurs,
+
+The petty prince employs
+Tout petit prince a des ambassadeurs,
+
+
+Ambassadors; the marquess errand-boys. 
+Tout marquis veut avoir des pages.
+</div>
+
+<div class="eng">
+</div>
+
+<div class="fr">
+</div>
+
+<script>
+
+function link(eng, fr) {
+  $(eng).hover(function() {
+    $(fr).addClass("fr-focus");
+  }, function() {
+    $(fr).removeClass("fr-focus");
+  });
+  $(fr).hover(function() {
+    $(eng).addClass("eng-focus");
+  }, function() {
+    $(eng).removeClass("eng-focus");
+  });
+}
+
+var paragraphs = $("#text").html().replace(/^\n+/g,"").split("\n\n\n").map(function(p) {
+  return p.split("\n\n");
+});
+
+var counter = 0;
+var div_counter = 0;
+for (var p = 0; p < paragraphs.length; p++) {
+  var sentences = paragraphs[p];
+  var current_div = div_counter++;
+  
+  $("body").append($("<div>", {'id': "align-" + current_div, 'class': "alignment"}));
+  $("#align-" + current_div).append($("<div>", {'id': "eng-align-" + current_div, 'class': "eng"}));
+  $("#align-" + current_div).append($("<div>", {'id': "fr-align-" + current_div, 'class': "fr"}));
+  
+  $("#eng-align-" + current_div).append($("<p>"));
+  $("#fr-align-" + current_div).append($("<p>"));
+  
+  for (var s = 0; s < sentences.length; s++) {
+    var current_id = counter++;
+    
+    var pair = sentences[s].split("\n");
+    var eng = pair[0];
+    var fr = pair[1];
+    
+    $("#eng-align-" + current_div).append($("<span>", {'html': eng + "\n", 'id': "eng-" + current_id}));
+    $("#fr-align-" + current_div).append($("<span>", {'html': fr + "\n", 'id': "fr-" + current_id}));
+    
+    console.log(current_id);
+    console.log(pair);
+  }
+}
+
+for (var i = 0; i < counter; i++) {
+  link("#eng-"+i, "#fr-"+i);
+}
+
+
+</script>
+
+
+</body>
+</html>
