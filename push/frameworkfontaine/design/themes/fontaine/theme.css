@@ -1,0 +1,138 @@
+/**
+ * theme.css - default css styling for 402 framework user theme 'minimal'
+ */
+.search_form {
+text-align:right;
+padding-top:10px;
+padding-right:5px;
+}
+/*styling to the logo*/
+img.logo {
+text-align:center;
+max-width:75%;
+padding-left:5px;
+padding-right:6%;
+max-height:135px;
+}
+/*body styling*/
+body {
+font-size:13px;
+}
+
+/*paragraph styling*/
+p {
+line-height: 14px;
+font-size: 13px;
+}
+/*this is styling for the texts in the database*/
+p.fheader {
+font-size:15px;
+text-decoration:underline;
+text-align:center;
+}
+p.michie {
+font-size:13px;
+}
+p.fontaine {
+font-size: 13px;
+}
+p.thomson {
+font-size:13px;
+}
+p.shapiro {
+font-size:13px;
+}
+p.spector {
+font-size:13px;
+}
+p.wayne {
+tfont-size:13px;
+}
+p.torres {
+text-align:center;
+font-size:13px;
+}
+/*header no.3*/
+h3 {
+font-size: 17px;
+font-weight: normal;
+color: #1a3852;
+}
+/*header*/
+div.header {
+background-color: #1e450a;
+height: 145px;
+}
+
+/*sidebar*/
+div.sidebar_left {
+height:100%;
+width:100%;
+font-size: 12px;
+border-right: 1px solid #dedede;
+border-bottom: 1px solid #dedede;
+padding-bottom:75px;
+background-color:#DFBF5F;
+color:#042d46;
+text-align:left;
+}
+
+/*sidebar title metadata*/
+div.sidebar_left div.title {
+font-size: 17px;
+color: #1a3852;
+margin: 10px;
+padding: 10px;
+}
+
+/*sidebar title metadata*/
+div.sidebar_left div.description {
+margin: 5px;
+padding: 5px;
+font-size: 12px;
+color: #1a3852;
+border: 1px solid #dedede;
+background-color: #eeeeee;
+}
+/*div image grid 6, scroll tool*/
+div.grid_6.image  {
+overflow:scroll;
+height:400px;	
+}
+
+
+div.footer {
+background-color:#DFBF5F;
+}
+/*variant page*/
+p.vheader {
+text-align:center;
+font-size:15px;
+}
+rs.vthomson {
+color:green;
+text-align:center;
+}
+rs.vwayne {
+color:purple;
+text-align:center;
+}
+rs.vmichie {
+color:blue;
+text-align:center;
+}
+
+rs.vspector {
+color:black;
+text-align:center;
+}
+rs.vshapiro {
+color:orange;
+text-align:center;
+}
+rs.vtorres {
+color:red;
+text-align:center;
+}
+
+
